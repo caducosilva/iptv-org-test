@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="RT DOCUMENTARY CHANNEL" tvg-logo="http://listaiptvbrasil.com/logos/rt.png" group-title="RUSSIA",RT DOCUMENTARY CHANNEL
+http://rt.ashttp.visionip.tv:1935/live/RT_Doc-SD/livestream.m3u8

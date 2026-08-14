@@ -1,0 +1,25 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="BOA VONTADE TV" tvg-logo="http://s20.postimg.org/hvwwcq4cp/boavontadetv.png" group-title="Religiosos",BOA VONTADE TV
+http://api.new.livestream.com/accounts/15107153/events/4338771/live.m3u8
+#EXTINF:-1 tvg-name="CJC TV" tvg-logo="http://s20.postimg.org/ht2ii7u7h/cjctv.png" group-title="Religiosos",CJC TV
+http://flash1.crossdigital.com.br:1935/ponto85/ongrace/playlist.m3u8
+#EXTINF:-1 tvg-name="CWB TV" tvg-logo="http://s20.postimg.org/5fpobb4j1/cwbtv.png" group-title="Religiosos",CWB TV
+http://38.96.175.108:1935/cwbtv/cwbtv/playlist.m3u8
+#EXTINF:-1 tvg-name="IGREJA ONLINE TV" tvg-logo="http://s20.postimg.org/v8fioif1p/Igreja_Online.jpg" group-title="Religiosos",IGREJA ONLINE TV
+http://195.22.19.179:1935/igronl/igronline2/playlist.m3u8
+#EXTINF:-1 tvg-name="REDE SECULO 21" tvg-logo="http://s14.postimg.org/k9exx981d/Rede_S_culo_21.png" group-title="Religiosos",REDE SECULO 21
+http://tvseculo21-lh.akamaihd.net/i/tvseculo_1@16110/master.m3u8
+#EXTINF:-1 tvg-name="REDE SUPER" tvg-logo="http://s18.postimg.org/j1yr3lukp/REDE_SUPER.png" group-title="Religiosos",REDE SUPER
+http://api.new.livestream.com/accounts/10205943/events/3429501/live.m3u8
+#EXTINF:-1 tvg-name="SHALOM WORLD" tvg-logo="https://goo.gl/KCFWFa" group-title="Religiosos",SHALOM WORLD
+http://wpc.faa3.edgecastcdn.net:80/80FAA3/shalom/LIVE01B-1VKNY5L2PYDF/live_720p/livestream.m3u8
+#EXTINF:-1 tvg-name="TV ALVORADA ESPIRITA" tvg-logo="http://s20.postimg.org/jopatdj1p/tvalvoradaesp_rita.png" group-title="Religiosos",TV ALVORADA ESPIRITA
+http://abr.732a.upx.net.br/732a_abr/smil:732a.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="TV CANÇÃO NOVA HD" tvg-logo="http://s20.postimg.org/athr2e65p/TV_Can_o_Nova.png" group-title="Religiosos",TV CANÇÃO NOVA HD
+http://cancaonova-push-live.hls.adaptive.level3.net/hls-live/cancaonova-channel01/_definst_/live/stream1.m3u8
+#EXTINF:-1 tvg-name="TV CINEC" tvg-logo="http://s20.postimg.org/s88or4re5/tvcinec.png" group-title="Religiosos",TV CINEC
+http://104.156.60.74:1935/tvcinec/tvcinec/playlist.m3u8
+#EXTINF:-1 tvg-name="TV TERCEIRO ANJO" tvg-logo="https://goo.gl/G7hM3f" group-title="Religiosos",TV TERCEIRO ANJO
+http://streamer1.streamhost.org:1935/salive/GMI3anjoh/playlist.m3u8
+#EXTINF:-1 tvg-name="TV UNIVERSAL" tvg-logo="http://s20.postimg.org/hsnwlbh65/TV_Universal.jpg" group-title="Religiosos",TV UNIVERSAL
+http://api.new.livestream.com/accounts/4486152/events/2780306/live.m3u8

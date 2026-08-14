@@ -1,0 +1,4 @@
+Coloque aqui arquivos .m3u / .m3u8
+O Cast Companion detecta sozinho quando voce adiciona, remove ou altera listas.
+Nao precisa fechar o programa.
+Para mudar a pasta, edite: Documents\iptv-org-test\lists_folder.txt

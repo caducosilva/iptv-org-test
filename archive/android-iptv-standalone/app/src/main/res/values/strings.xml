@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IPTV Android</string>
+    <string name="import_m3u">Importar M3U</string>
+    <string name="cast_button">Cast TV</string>
+    <string name="settings_title">Importar lista</string>
+    <string name="settings_hint">O app roda sozinho no celular. Use o botao + para importar M3U.</string>
+    <string name="save">Salvar</string>
+    <string name="test_connection">Testar</string>
+</resources>

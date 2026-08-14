@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="AGRO BRASIL" tvg-logo="https://goo.gl/awCZdI" group-title="CANAIS",AGRO BRASIL
+http://192.99.101.129:1935/agrobrasiltv/agrobrasiltv_720p/live.m3u8
+#EXTINF:-1 tvg-name="AGRO CANAL" tvg-logo="https://goo.gl/qS8f4y" group-title="CANAIS",AGRO CANAL
+http://live.sba1.com:80/hls-live/liveac/_definst_/liveevent/livestream.m3u8
+#EXTINF:-1 tvg-name="VIA MIDIA TV" tvg-logo="https://goo.gl/1M0606" group-title="CANAIS",VIA MIDIA TV
+http://d3e1993t7xu9fk.cloudfront.net/viamidia/aovivo/playlist.m3u8

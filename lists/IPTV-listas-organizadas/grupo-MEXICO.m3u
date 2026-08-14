@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="AZTECA TRECE" tvg-logo="https://goo.gl/ISsPDC" group-title="MEXICO",AZTECA TRECE
+http://aztecalive-lh.akamaihd.net/i/0oxnvzh8a_1@175671/index_1_av-b.m3u8
+#EXTINF:-1 tvg-name="CANAL DE LAS ESTRELLAS" tvg-logo="https://goo.gl/CWsjkn" group-title="MEXICO",CANAL DE LAS ESTRELLAS
+http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/CEST/tu1_1.m3u8
+#EXTINF:-1 tvg-name="FORO TV" tvg-logo="https://lut.im/MuWOQE60Ye/vbTaP0eDEUnUSRsd.png" group-title="MEXICO",FORO TV
+http://185417-f.akamaihd.net/i/n0tf0r0_1@81283/master.m3u8

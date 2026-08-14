@@ -1,0 +1,101 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="[COLOR orange](WEB TV)[/COLOR]" tvg-logo="https://goo.gl/ZLqabb" group-title="WEB TV",[COLOR orange](WEB TV)[/COLOR]
+http://0.0.0.0
+#EXTINF:-1 tvg-name="TV MANTIQUEIRA" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV MANTIQUEIRA
+http://streaming42.sitehosting.com.br:1935/rlcom/rlcom/live.m3u8
+#EXTINF:-1 tvg-name="TV MANÁ 1" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV MANÁ 1
+http://195.22.19.179:1935/manasat/manasat3/live.m3u8
+#EXTINF:-1 tvg-name="TV MASTER" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV MASTER
+http://wse3.player.tv.br:1935/tvmaster/tvmaster/live.m3u8
+#EXTINF:-1 tvg-name="TV MEDICINA E SAÚDE" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV MEDICINA E SAÚDE
+http://hls.cdn.upx.net.br:1935/7dcb/myStream.sdp/live.m3u8
+#EXTINF:-1 tvg-name="TV MEIO NORTE" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV MEIO NORTE
+http://api.new.livestream.com:80/accounts/3332377/events/2958396/live.m3u8
+#EXTINF:-1 tvg-name="TV MICA" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV MICA
+http://173.236.10.10:1935/mica12/mica12/live.m3u8
+#EXTINF:-1 tvg-name="TV MISSÃO" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV MISSÃO
+http://wse7.player.tv.br:1935/tvmissao/tvmissao/live.m3u8
+#EXTINF:-1 tvg-name="TV MUSICAL CATÓLICA" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV MUSICAL CATÓLICA
+http://wse6.player.tv.br:1935/tmc/tmc/live.m3u8
+#EXTINF:-1 tvg-name="TV NOVA ESPERANÇA" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV NOVA ESPERANÇA
+http://hd4.com.br:1935/tvnovaesperanca/tvnovaesperanca/live.m3u8
+#EXTINF:-1 tvg-name="TV NOVA NORDESTE" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV NOVA NORDESTE
+http://cdn2.comets.com.br:1935/tvnovanordeste/aovivo/live.m3u8
+#EXTINF:-1 tvg-name="TV NOVO CAMINHO" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV NOVO CAMINHO
+http://tv01.hstbr.net:1935/tvnovocaminho/tvnovocaminho/live.m3u8
+#EXTINF:-1 tvg-name="TV O POVO" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV O POVO
+http://srv3.zoeweb.tv:1935/z01-live/stream/livestream.m3u8
+#EXTINF:-1 tvg-name="TV ONLINE NOSSA CIDADE" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV ONLINE NOSSA CIDADE
+http://10.fm5.com.br:1935/nossacidade/nossacidade/live.m3u8
+#EXTINF:-1 tvg-name="TV PRODUTO" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV PRODUTO
+http://wse7.player.tv.br:1935/canalreporter/canalreporter/live.m3u8
+#EXTINF:-1 tvg-name="TV RBC" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV RBC
+http://192.99.200.48:1935/ponto10/latina/live.m3u8
+#EXTINF:-1 tvg-name="TV RBC SALVADOR" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV RBC SALVADOR
+http://45.43.208.98:1935/alexandre3116/alexandre3116/live.m3u8
+#EXTINF:-1 tvg-name="TV REGIONAL" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV REGIONAL
+http://painel.serveron.com.br:1935/tvregional/tvregional/live.m3u8
+#EXTINF:-1 tvg-name="TV RIO PRETO" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV RIO PRETO
+http://186.227.165.118:1935/insatv/livestream/live.m3u8
+#EXTINF:-1 tvg-name="TV SAN" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV SAN
+http://131.0.87.235:8081/hdmi?live.m3u8
+#EXTINF:-1 tvg-name="TV SERRA DOURADA" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV SERRA DOURADA
+http://srv9.zoeweb.tv:1935/zw921/zw921_720p/live.m3u8
+#EXTINF:-1 tvg-name="TV SINDEEPRES" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV SINDEEPRES
+http://v.pool.us.wse-1.srvstream.com:1935/fx7-live/fx7-live_720p/livestream.m3u8
+#EXTINF:-1 tvg-name="TV SOL HD" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV SOL HD
+http://172.93.110.130:1935/tvsol/tvsol/live.m3u8
+#EXTINF:-1 tvg-name="TV TAMBAÚ" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV TAMBAÚ
+http://wse3.player.tv.br:1935/tvtambau/tvtambau/live.m3u8
+#EXTINF:-1 tvg-name="TV TUBÁ" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV TUBÁ
+http://69.46.0.170:1935/rcr_tuba/tv.stream/live.m3u8
+#EXTINF:-1 tvg-name="TV UFG" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV UFG
+http://flash.softhost.com.br:1935/ufg/tvufgweb/live.m3u8
+#EXTINF:-1 tvg-name="TV UNICESUMAR" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV UNICESUMAR
+http://69.46.0.170:1935/unicesumar/unicesumar.stream/live.m3u8
+#EXTINF:-1 tvg-name="TV URBANA" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV URBANA
+http://srv6.zoeweb.tv:1935/z433-live/stream/livestream.m3u8
+#EXTINF:-1 tvg-name="TV VERDADE" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV VERDADE
+http://ocatv.mcgi.me:1935/public/247_br/live.m3u8
+#EXTINF:-1 tvg-name="TV WEB BAHIA" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV WEB BAHIA
+http://streaming63.sitehosting.com.br:1935/xcfilmes/xcfilmes/live.m3u8
+#EXTINF:-1 tvg-name="TV WEB PARANÁ" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV WEB PARANÁ
+http://wse3.player.tv.br:1935/tvwebparana/tvwebparana/live.m3u8
+#EXTINF:-1 tvg-name="TV YORUBÁ" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV YORUBÁ
+http://45.43.208.2:1935/yoruba/yoruba/live.m3u8
+#EXTINF:-1 tvg-name="TV ZOOM" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TV ZOOM
+http://streaming60.sitehosting.com.br:1935/zoom/zoom/live.m3u8
+#EXTINF:-1 tvg-name="TVN BRASIL" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TVN BRASIL
+http://painelvj.com.br:1935/tvnbrasil/tvnbrasil.sdp/live.m3u8
+#EXTINF:-1 tvg-name="TWIT" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",TWIT
+http://iphone-streaming.ustream.tv:80/uhls/1524/streams/live/playlist.m3u8
+#EXTINF:-1 tvg-name="UCB TV" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",UCB TV
+http://live.ucb.simplestreamcdn.com:80/live/ucbtv/bitrate1.isml/bitrate1-audio_track=64000-video=2500000.m3u8
+#EXTINF:-1 tvg-name="UCS TV" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",UCS TV
+http://cdn.srv.br:8088/UCSTV/UCSTV/playlist.m3u8
+#EXTINF:-1 tvg-name="UNEC TV" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",UNEC TV
+http://wse8.player.tv.br:1935/unectv/unectv/live.m3u8
+#EXTINF:-1 tvg-name="UNITV" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",UNITV
+http://unitvaovivo.ufrgs.br:8080/live.flv?livestream.m3u8
+#EXTINF:-1 tvg-name="WEB TV ASSUNÇÃO" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",WEB TV ASSUNÇÃO
+http://srv3.zoeweb.tv:1935/z384-live/stream/livestream.m3u8
+#EXTINF:-1 tvg-name="WEB TV ESPAÇO JORGE GUEDES" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",WEB TV ESPAÇO JORGE GUEDES
+http://wsemedia.com:1935/cn02/cn02/live.m3u8
+#EXTINF:-1 tvg-name="WEB TV MINAS" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",WEB TV MINAS
+http://173.236.10.10:1935/webtvminas/webtvminas/live.m3u8
+#EXTINF:-1 tvg-name="WEB TV SEMEAR" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",WEB TV SEMEAR
+http://cdn2.w7virtual.net:1935/live/addicara/addicara/livestream.m3u8
+#EXTINF:-1 tvg-name="WEB TV SÃO CAETANO" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",WEB TV SÃO CAETANO
+http://webtvsaocaetano.flashplayer.acessaradios.com.br:1935/webtvsaocaetano/webtvsaocaetano/live.m3u8
+#EXTINF:-1 tvg-name="WEB TV UAI" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",WEB TV UAI
+http://158.69.26.98:1935/luciahelena/luciahelena/live.m3u8
+#EXTINF:-1 tvg-name="WFTV 9 NEWS" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",WFTV 9 NEWS
+http://cmghlslive-i.akamaihd.net:80/hls/live/224711/WFTV/904k/prog.m3u8
+#EXTINF:-1 tvg-name="WGN 9 NEWS" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",WGN 9 NEWS
+http://wgntribune-lh.akamaihd.net:80/i/WGNPrimary_1@304622/index_700_av-p.m3u8
+#EXTINF:-1 tvg-name="WPXI NEWS" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",WPXI NEWS
+http://cmghlslive-i.akamaihd.net:80/hls/live/224715/WPXI/904k/prog.m3u8
+#EXTINF:-1 tvg-name="WSOC 9 NEWS" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",WSOC 9 NEWS
+http://cmghlslive-i.akamaihd.net:80/hls/live/224717/WSOC/904k/prog.m3u8
+#EXTINF:-1 tvg-name="YEEAH!" tvg-logo="https://goo.gl/4Wl7FY" group-title="WEB TV",YEEAH!
+http://45.43.208.2:1935/bruno4119/bruno4119/live.m3u8

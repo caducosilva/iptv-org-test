@@ -1,0 +1,15 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="CANÇÃO NOVA" tvg-logo="https://lut.im/bBrQSFqK33/hf10xiHhdZvx5Y2y.png" group-title="RELIGIOSO",CANÇÃO NOVA
+http://cnhls-lh.akamaihd.net:80/i/tvcnmob_1@147036/index_540_av-b.m3u8
+#EXTINF:-1 tvg-name="IMPD TV" tvg-logo="https://lut.im/iCpjYuGEYQ/w22enlsIB8F9IoqV.png" group-title="RELIGIOSO",IMPD TV
+http://impd.crossdigital.com.br:1935/impd/impd/live.m3u8
+#EXTINF:-1 tvg-name="REDE GOSPEL" tvg-logo="https://lut.im/M6XzAMj8cC/hpRcOL0Jv7rvMGmH.png" group-title="RELIGIOSO",REDE GOSPEL
+http://media.igospel.com.br:1935/live/redegospel/waldo_paes.m3u8
+#EXTINF:-1 tvg-name="REDE VIDA" tvg-logo="https://goo.gl/H4GFo1" group-title="RELIGIOSO",REDE VIDA
+http://rtmp.cdn.upx.net.br:1935/74cc/myStream.sdp/live.m3u8
+#EXTINF:-1 tvg-name="RIT" tvg-logo="https://lut.im/KYnEXhyYhC/p67CCl1OZjgtFplG.png" group-title="RELIGIOSO",RIT
+http://flash1.crossdigital.com.br:1935/ponto79/ongrace/live.m3u8
+#EXTINF:-1 tvg-name="TV APARECIDA" tvg-logo="https://lut.im/4dpYzeY5ga/LxqrxrjkXcIeOSn1.png" group-title="RELIGIOSO",TV APARECIDA
+http://caikrondatacenter.com.br:1935/tvaparecida/tvaparecida.stream/playlist.m3u8
+#EXTINF:-1 tvg-name="TV NOVO TEMPO" tvg-logo="https://lut.im/wJnpc56UYN/SxZIwjQckIaSaQaX.png" group-title="RELIGIOSO",TV NOVO TEMPO
+http://stream.novotempo.com/tv/smil:tvnovotempo.smil/chunklist_w128671060_b256000_slpor.m3u8

@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="RT DOCUMENTARY CHANNEL" group-title="Documentários",RT DOCUMENTARY CHANNEL
+http://RTCDN.api.visionip.tv/live/ASHTTP/rtcdn-rtcdn-doc-hsslive-25f-16x9-MB/playlist.m3u8

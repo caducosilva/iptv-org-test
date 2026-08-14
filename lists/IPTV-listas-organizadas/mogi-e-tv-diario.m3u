@@ -1,0 +1,17 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="TV DIARIO - FHD" tvg-logo="http://uione.dadg.today:80/images/dsAt8cMDBjbP3mVNdeYR4YLxLojL3swQLY4x0s7wF0pXdJCe8FtCzijrsnryzoKX.jpg" group-title="ABERTOS",TV DIARIO - FHD
+http://clienteworld.com:80/claud123/claud123/130540
+#EXTINF:-1 tvg-name="TV DIARIO - HD" tvg-logo="http://uione.dadg.today:80/images/dsAt8cMDBjbP3mVNdeYR4YLxLojL3swQLY4x0s7wF0pXdJCe8FtCzijrsnryzoKX.jpg" group-title="ABERTOS",TV DIARIO - HD
+http://clienteworld.com:80/claud123/claud123/83678
+#EXTINF:-1 tvg-name="TV DIARIO - SD" tvg-logo="http://uione.dadg.today:80/images/dsAt8cMDBjbP3mVNdeYR4YLxLojL3swQLY4x0s7wF0pXdJCe8FtCzijrsnryzoKX.jpg" group-title="ABERTOS",TV DIARIO - SD
+http://clienteworld.com:80/claud123/claud123/83677
+#EXTINF:-1 tvg-name="TV DIARIO" tvg-logo="http://tvdiario.verdesmares.com.br/img/tvdiario/tv-diario.png" group-title="CANAL ABERTO",TV DIARIO
+http://slrp.sambavideos.sambatech.com/liveevent/tvdiario_7a683b067e5eee5c8d45e1e1883f69b9/livestream/playlist.m3u8
+#EXTINF:-1 tvg-name="GLOBO TV DIARIO MOGI DAS CRUZES FHD" tvg-logo="https://tinyurl.com/u9cglob" group-title="GLOBO",GLOBO TV DIARIO MOGI DAS CRUZES FHD
+http://clienteworld.com:80/claud123/claud123/105040
+#EXTINF:-1 tvg-name="GLOBO TV DIARIO MOGI DAS CRUZES HD" tvg-logo="https://tinyurl.com/u9cglob" group-title="GLOBO",GLOBO TV DIARIO MOGI DAS CRUZES HD
+http://clienteworld.com:80/claud123/claud123/105039
+#EXTINF:-1 tvg-name="GLOBO TV DIARIO MOGI DAS CRUZES SD" tvg-logo="https://tinyurl.com/u9cglob" group-title="GLOBO",GLOBO TV DIARIO MOGI DAS CRUZES SD
+http://clienteworld.com:80/claud123/claud123/105038
+#EXTINF:-1 tvg-name="TV DIARIO DO SERTÃO" tvg-logo="http://s11.postimg.org/l4gjn0o4j/TV_Di_rio_do_Sert_o.png" group-title="TV Aberta",TV DIARIO DO SERTÃO
+http://painelvj.com.br:1935/pdsertaotv/pdsertaotv.sdp/playlist.m3u8

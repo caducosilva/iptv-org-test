@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="REDE MEIO NORTE" tvg-logo="http://listaiptvbrasil.com/logos/redemeionorte.png" group-title="Abertos",REDE MEIO NORTE
+http://api.new.livestream.com/accounts/3332377/events/2958396/live.m3u8

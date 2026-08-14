@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="TBO ANAPOLIS" tvg-logo="http://www.tboanapolis.com/img/tbo.png" group-title="WEBTV",TBO ANAPOLIS
+http://173.236.10.10:1935/tboanapolis/tboanapolis/playlist.m3u8
+#EXTINF:-1 tvg-name="TV BIRIGUI" tvg-logo="https://lut.im/kKxu5SnI7R/l0kMU9FixWdq3Yk7.jpg" group-title="WEBTV",TV BIRIGUI
+http://tv01.hstbr.net:1935/radiodigitalbirigui/radiodigitalbirigui/live.m3u8
+#EXTINF:-1 tvg-name="TV GUARANY" tvg-logo="https://lut.im/rjohkemCX3/Kp1IiI2SW2tTW8pL.png" group-title="WEBTV",TV GUARANY
+http://wse.stmip.in:1935/rtguarany/rtguarany/live.m3u8

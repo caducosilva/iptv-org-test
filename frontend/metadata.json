@@ -1,0 +1,6 @@
+{
+  "name": "IPTV Cast Companion",
+  "description": "Painel de controle local para gerenciar e espelhar canais IPTV para Chromecast e Smart TVs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

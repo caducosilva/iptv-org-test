@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="SPORTV" tvg-logo="https://s19.postimg.org/72a42n79v/sportv.png" group-title="esportes",SPORTV
+http://5.79.68.138:8081/look/sportv/playlist.m3u8

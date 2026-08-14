@@ -1,0 +1,56 @@
+# Segredos e config local (NUNCA versionar)
+.env
+.env.*
+!.env.example
+*api*key*
+*credentials*
+*secret*
+
+# Perfil do Chrome usado pelo modo app (cookies e sessao)
+chrome-app-profile/
+*-profile/
+
+# Cache de runtime e dispositivos da rede local
+channel_health.json
+dlna_devices.json
+known_tvs.json
+lists_folder.txt
+logs/
+*.log
+*.pid
+*.lock
+
+# Capturas de depuracao
+screenshots/
+*.png
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Android / Gradle
+.gradle/
+build/
+local.properties
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Testes que gravam saida local
+tests/test-logs/
+tests/*.json
+
+# Editor / sistema
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

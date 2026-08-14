@@ -1,0 +1,9 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="ABU DABI SPORT 1 HD" group-title="Canais Internacionais",ABU DABI SPORT 1 HD
+http://adtv.ercdn.net/adsport1/adsport1_720p.m3u8?Compartilhandolink
+#EXTINF:-1 tvg-name="ABU DABI SPORT 2 HD" group-title="Canais Internacionais",ABU DABI SPORT 2 HD
+http://adtv.ercdn.net/adsport2/adsport2_720p.m3u8?Compartilhandolink
+#EXTINF:-1 tvg-name="CityTV" tvg-logo="https://goo.gl/LVNHOF" group-title="Canais Internacionais",CityTV
+http://nodeb.gocaster.net:1935/CGL/_definst_/mp4:TODAYFM_TEST2/live.m3u8?Compartilhandolink
+#EXTINF:-1 tvg-name="TELPIN 2 HD ARGENTINA" tvg-logo="https://goo.gl/RuXf9u" group-title="Canais Internacionais",TELPIN 2 HD ARGENTINA
+http://201.219.100.30:1935/telpintv/ttv.stream_720p/playlist.m3u8

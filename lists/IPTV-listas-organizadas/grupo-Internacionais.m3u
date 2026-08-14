@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="TVI24" tvg-logo="http://www.tvi24.iol.pt/images/logotvi24.png" group-title="Internacionais",TVI24
+http://video-live.iol.pt:1935/live_tvi24/smil:LIVE_TVI24/playlist.m3u8
+#EXTINF:-1 tvg-name="TVI24" tvg-logo="http://www.tvi24.iol.pt/images/logotvi24.png" group-title="Internacionais",TVI24
+http://video-live.iol.pt:1935/live_tvi24/LIVE_TVI24-1/playlist.m3u8

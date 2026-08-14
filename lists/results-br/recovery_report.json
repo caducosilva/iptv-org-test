@@ -1,0 +1,57 @@
+{
+  "recovered": 10,
+  "still_fail": 101,
+  "working_total": 324,
+  "recovered_items": [
+    {
+      "name": "Angel TV Portuguese (720p)",
+      "status": "RECOVERED_UA=vlc_TLS=on",
+      "url": "https://janya-digimix.akamaized.net/vglive-sk-382409/portuese/ngrp:angelportuguese_all/playlist.m3u8"
+    },
+    {
+      "name": "Canal do Criador (1080p)",
+      "status": "RECOVERED_UA=vlc_TLS=off",
+      "url": "https://607d2a1a47b1f.streamlock.net/crur/smil:canaldocriador.smil/playlist.m3u8"
+    },
+    {
+      "name": "Canal Rural (1080p)",
+      "status": "RECOVERED_UA=vlc_TLS=off",
+      "url": "https://607d2a1a47b1f.streamlock.net/crur/smil:canalrural.smil/playlist.m3u8"
+    },
+    {
+      "name": "Geekdot (720p)",
+      "status": "RECOVERED_UA=vlc_TLS=off",
+      "url": "https://stream.ichibantv.com:3764/hybrid/play.m3u8"
+    },
+    {
+      "name": "Ghost TV (712p) [Not 24/7]",
+      "status": "RECOVERED_UA=vlc_TLS=off",
+      "url": "https://stmv.video.expressolider.com.br/ghostv/ghostv/playlist.m3u8"
+    },
+    {
+      "name": "KpopTV Play (576p)",
+      "status": "RECOVERED_UA=vlc_TLS=on",
+      "url": "https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8"
+    },
+    {
+      "name": "Trace Brasil (1080p)",
+      "status": "RECOVERED_UA=vlc_TLS=on",
+      "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01131-tracetv-tracebrazuca-samsungbr/playlist.m3u8"
+    },
+    {
+      "name": "TV Diário Macapá (1080p) [Not 24/7]",
+      "status": "RECOVERED_UA=vlc_TLS=on",
+      "url": "https://5ad482a77183d.streamlock.net/marliomelohotmail.com/marliomelohotmail.com/playlist.m3u8"
+    },
+    {
+      "name": "TV Fronteira (480i)",
+      "status": "RECOVERED_UA=vlc_TLS=off",
+      "url": "https://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8"
+    },
+    {
+      "name": "UNISUL TV (720p)",
+      "status": "RECOVERED_UA=vlc_TLS=on",
+      "url": "https://sitetv.brasilstream.com.br/hls/sitetv/index.m3u8?token="
+    }
+  ]
+}

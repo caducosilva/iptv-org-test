@@ -1,0 +1,69 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="TELECINE ACTION - FHD" tvg-logo="https://tinyurl.com/u9tca" group-title="TELECINE",TELECINE ACTION - FHD
+http://clienteworld.com:80/claud123/claud123/82682
+#EXTINF:-1 tvg-name="TELECINE ACTION - FHD²" tvg-logo="https://tinyurl.com/u9tca" group-title="TELECINE",TELECINE ACTION - FHD²
+http://clienteworld.com:80/claud123/claud123/82683
+#EXTINF:-1 tvg-name="TELECINE ACTION - HD" tvg-logo="https://tinyurl.com/u9tca" group-title="TELECINE",TELECINE ACTION - HD
+http://clienteworld.com:80/claud123/claud123/82680
+#EXTINF:-1 tvg-name="TELECINE ACTION - HD ²" tvg-logo="https://tinyurl.com/u9tca" group-title="TELECINE",TELECINE ACTION - HD ²
+http://clienteworld.com:80/claud123/claud123/82681
+#EXTINF:-1 tvg-name="TELECINE ACTION - SD" tvg-logo="https://tinyurl.com/u9tca" group-title="TELECINE",TELECINE ACTION - SD
+http://clienteworld.com:80/claud123/claud123/82678
+#EXTINF:-1 tvg-name="TELECINE ACTION - SD ²" tvg-logo="https://tinyurl.com/u9tca" group-title="TELECINE",TELECINE ACTION - SD ²
+http://clienteworld.com:80/claud123/claud123/82679
+#EXTINF:-1 tvg-name="TELECINE CULT - FHD" tvg-logo="https://tinyurl.com/u9tcc" group-title="TELECINE",TELECINE CULT - FHD
+http://clienteworld.com:80/claud123/claud123/82687
+#EXTINF:-1 tvg-name="TELECINE CULT - HD" tvg-logo="https://tinyurl.com/u9tcc" group-title="TELECINE",TELECINE CULT - HD
+http://clienteworld.com:80/claud123/claud123/82686
+#EXTINF:-1 tvg-name="TELECINE CULT - SD" tvg-logo="https://tinyurl.com/u9tcc" group-title="TELECINE",TELECINE CULT - SD
+http://clienteworld.com:80/claud123/claud123/82684
+#EXTINF:-1 tvg-name="TELECINE CULT - SD ²" tvg-logo="https://tinyurl.com/u9tcc" group-title="TELECINE",TELECINE CULT - SD ²
+http://clienteworld.com:80/claud123/claud123/82685
+#EXTINF:-1 tvg-name="TELECINE FUN - FHD" tvg-logo="https://tinyurl.com/u9tcfun" group-title="TELECINE",TELECINE FUN - FHD
+http://clienteworld.com:80/claud123/claud123/82692
+#EXTINF:-1 tvg-name="TELECINE FUN - FHD ²" tvg-logo="https://tinyurl.com/u9tcfun" group-title="TELECINE",TELECINE FUN - FHD ²
+http://clienteworld.com:80/claud123/claud123/82693
+#EXTINF:-1 tvg-name="TELECINE FUN - HD" tvg-logo="https://tinyurl.com/u9tcfun" group-title="TELECINE",TELECINE FUN - HD
+http://clienteworld.com:80/claud123/claud123/82690
+#EXTINF:-1 tvg-name="TELECINE FUN - HD²" tvg-logo="https://tinyurl.com/u9tcfun" group-title="TELECINE",TELECINE FUN - HD²
+http://clienteworld.com:80/claud123/claud123/82691
+#EXTINF:-1 tvg-name="TELECINE FUN - SD" tvg-logo="https://tinyurl.com/u9tcfun" group-title="TELECINE",TELECINE FUN - SD
+http://clienteworld.com:80/claud123/claud123/82688
+#EXTINF:-1 tvg-name="TELECINE FUN - SD ²" tvg-logo="https://tinyurl.com/u9tcfun" group-title="TELECINE",TELECINE FUN - SD ²
+http://clienteworld.com:80/claud123/claud123/82689
+#EXTINF:-1 tvg-name="TELECINE PIPOCA - 4K" tvg-logo="https://tinyurl.com/u9tcpi" group-title="TELECINE",TELECINE PIPOCA - 4K
+http://clienteworld.com:80/claud123/claud123/99909
+#EXTINF:-1 tvg-name="TELECINE PIPOCA - FHD" tvg-logo="https://tinyurl.com/u9tcpi" group-title="TELECINE",TELECINE PIPOCA - FHD
+http://clienteworld.com:80/claud123/claud123/82697
+#EXTINF:-1 tvg-name="TELECINE PIPOCA - FHD H265" tvg-logo="https://tinyurl.com/u9tcpi" group-title="TELECINE",TELECINE PIPOCA - FHD H265
+http://clienteworld.com:80/claud123/claud123/13863585
+#EXTINF:-1 tvg-name="TELECINE PIPOCA - FHD ²" tvg-logo="https://tinyurl.com/u9tcpi" group-title="TELECINE",TELECINE PIPOCA - FHD ²
+http://clienteworld.com:80/claud123/claud123/82698
+#EXTINF:-1 tvg-name="TELECINE PIPOCA - HD" tvg-logo="https://tinyurl.com/u9tcpi" group-title="TELECINE",TELECINE PIPOCA - HD
+http://clienteworld.com:80/claud123/claud123/82695
+#EXTINF:-1 tvg-name="TELECINE PIPOCA - HD ²" tvg-logo="https://tinyurl.com/u9tcpi" group-title="TELECINE",TELECINE PIPOCA - HD ²
+http://clienteworld.com:80/claud123/claud123/82696
+#EXTINF:-1 tvg-name="TELECINE PIPOCA - SD" tvg-logo="https://tinyurl.com/u9tcpi" group-title="TELECINE",TELECINE PIPOCA - SD
+http://clienteworld.com:80/claud123/claud123/82694
+#EXTINF:-1 tvg-name="TELECINE PREMIUM - FHD" tvg-logo="https://tinyurl.com/u9tcp" group-title="TELECINE",TELECINE PREMIUM - FHD
+http://clienteworld.com:80/claud123/claud123/82702
+#EXTINF:-1 tvg-name="Telecine Premium - FHD²" tvg-logo="https://tinyurl.com/u9tcp" group-title="TELECINE",Telecine Premium - FHD²
+http://clienteworld.com:80/claud123/claud123/82703
+#EXTINF:-1 tvg-name="TELECINE PREMIUM - H265" tvg-logo="https://tinyurl.com/u9tcp" group-title="TELECINE",TELECINE PREMIUM - H265
+http://clienteworld.com:80/claud123/claud123/99910
+#EXTINF:-1 tvg-name="TELECINE PREMIUM - HD" tvg-logo="https://tinyurl.com/u9tcp" group-title="TELECINE",TELECINE PREMIUM - HD
+http://clienteworld.com:80/claud123/claud123/82700
+#EXTINF:-1 tvg-name="TELECINE PREMIUM - HD ²" tvg-logo="https://tinyurl.com/u9tcp" group-title="TELECINE",TELECINE PREMIUM - HD ²
+http://clienteworld.com:80/claud123/claud123/82701
+#EXTINF:-1 tvg-name="TELECINE PREMIUM - SD" tvg-logo="https://tinyurl.com/u9tcp" group-title="TELECINE",TELECINE PREMIUM - SD
+http://clienteworld.com:80/claud123/claud123/82699
+#EXTINF:-1 tvg-name="TELECINE TOUCH - FHD" tvg-logo="https://tinyurl.com/u9tct" group-title="TELECINE",TELECINE TOUCH - FHD
+http://clienteworld.com:80/claud123/claud123/82708
+#EXTINF:-1 tvg-name="TELECINE TOUCH - HD" tvg-logo="https://tinyurl.com/u9tct" group-title="TELECINE",TELECINE TOUCH - HD
+http://clienteworld.com:80/claud123/claud123/82706
+#EXTINF:-1 tvg-name="TELECINE TOUCH - HD ²" tvg-logo="https://tinyurl.com/u9tct" group-title="TELECINE",TELECINE TOUCH - HD ²
+http://clienteworld.com:80/claud123/claud123/82707
+#EXTINF:-1 tvg-name="TELECINE TOUCH - SD" tvg-logo="https://tinyurl.com/u9tct" group-title="TELECINE",TELECINE TOUCH - SD
+http://clienteworld.com:80/claud123/claud123/82704
+#EXTINF:-1 tvg-name="TELECINE TOUCH - SD ²" tvg-logo="https://tinyurl.com/u9tct" group-title="TELECINE",TELECINE TOUCH - SD ²
+http://clienteworld.com:80/claud123/claud123/82705

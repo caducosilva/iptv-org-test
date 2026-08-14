@@ -1,0 +1,47 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="SBT - 4K" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT - 4K
+http://clienteworld.com:80/claud123/claud123/54298
+#EXTINF:-1 tvg-name="SBT - FHD" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT - FHD
+http://clienteworld.com:80/claud123/claud123/83669
+#EXTINF:-1 tvg-name="SBT - h265²" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT - h265²
+http://clienteworld.com:80/claud123/claud123/83668
+#EXTINF:-1 tvg-name="SBT - HD" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT - HD
+http://clienteworld.com:80/claud123/claud123/83666
+#EXTINF:-1 tvg-name="SBT - SD" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT - SD
+http://clienteworld.com:80/claud123/claud123/83665
+#EXTINF:-1 tvg-name="SBT BRASILIA - HD" tvg-logo="http://uione.dadg.today:80/images/gIxRDUoM8qPQmJPoTBRJ1J0x5-ruTxVM25lVc5IWOUn0KP0Vui12kpnMwNm0OYQ5ZRyXmyr4v4VNHsOfs5_Y5g.jpg" group-title="SBT",SBT BRASILIA - HD
+http://clienteworld.com:80/claud123/claud123/138781367
+#EXTINF:-1 tvg-name="SBT CEARA JANGADEIRO - FHD" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT CEARA JANGADEIRO - FHD
+http://clienteworld.com:80/claud123/claud123/320210
+#EXTINF:-1 tvg-name="SBT GOIAS" tvg-logo="http://uione.dadg.today:80/images/gIxRDUoM8qPQmJPoTBRJ1J0x5-ruTxVM25lVc5IWOUn0KP0Vui12kpnMwNm0OYQ5ZRyXmyr4v4VNHsOfs5_Y5g.jpg" group-title="SBT",SBT GOIAS
+http://clienteworld.com:80/claud123/claud123/138773130
+#EXTINF:-1 tvg-name="SBT MARANHAO" tvg-logo="http://uione.dadg.today:80/images/gIxRDUoM8qPQmJPoTBRJ1J0x5-ruTxVM25lVc5IWOUn0KP0Vui12kpnMwNm0OYQ5ZRyXmyr4v4VNHsOfs5_Y5g.jpg" group-title="SBT",SBT MARANHAO
+http://clienteworld.com:80/claud123/claud123/138781366
+#EXTINF:-1 tvg-name="SBT MINAS - FHD" tvg-logo="http://uione.dadg.today:80/images/gIxRDUoM8qPQmJPoTBRJ1J0x5-ruTxVM25lVc5IWOUn0KP0Vui12kpnMwNm0OYQ5ZRyXmyr4v4VNHsOfs5_Y5g.jpg" group-title="SBT",SBT MINAS - FHD
+http://clienteworld.com:80/claud123/claud123/138774683
+#EXTINF:-1 tvg-name="SBT MT - FHD" tvg-logo="http://uione.dadg.today:80/images/gIxRDUoM8qPQmJPoTBRJ1J0x5-ruTxVM25lVc5IWOUn0KP0Vui12kpnMwNm0OYQ5ZRyXmyr4v4VNHsOfs5_Y5g.jpg" group-title="SBT",SBT MT - FHD
+http://clienteworld.com:80/claud123/claud123/138774684
+#EXTINF:-1 tvg-name="SBT PARA -HD" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT PARA -HD
+http://clienteworld.com:80/claud123/claud123/1385357
+#EXTINF:-1 tvg-name="SBT PARANÁ" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT PARANÁ
+http://clienteworld.com:80/claud123/claud123/138767949
+#EXTINF:-1 tvg-name="SBT RECIFE TV JORNAL - H264" tvg-logo="http://uione.dadg.today:80/images/gIxRDUoM8qPQmJPoTBRJ1J0x5-ruTxVM25lVc5IWOUn0KP0Vui12kpnMwNm0OYQ5ZRyXmyr4v4VNHsOfs5_Y5g.jpg" group-title="SBT",SBT RECIFE TV JORNAL - H264
+http://clienteworld.com:80/claud123/claud123/138781368
+#EXTINF:-1 tvg-name="SBT REDE MASSA" tvg-logo="http://uione.dadg.today:80/images/gIxRDUoM8qPQmJPoTBRJ1J0x5-ruTxVM25lVc5IWOUn0KP0Vui12kpnMwNm0OYQ5ZRyXmyr4v4VNHsOfs5_Y5g.jpg" group-title="SBT",SBT REDE MASSA
+http://clienteworld.com:80/claud123/claud123/138761814
+#EXTINF:-1 tvg-name="SBT RJ - HD" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT RJ - HD
+http://clienteworld.com:80/claud123/claud123/156203
+#EXTINF:-1 tvg-name="SBT RN - FHD" tvg-logo="http://uione.dadg.today:80/images/gIxRDUoM8qPQmJPoTBRJ1J0x5-ruTxVM25lVc5IWOUn0KP0Vui12kpnMwNm0OYQ5ZRyXmyr4v4VNHsOfs5_Y5g.jpg" group-title="SBT",SBT RN - FHD
+http://clienteworld.com:80/claud123/claud123/138775362
+#EXTINF:-1 tvg-name="SBT RS - HD" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT RS - HD
+http://clienteworld.com:80/claud123/claud123/1385279
+#EXTINF:-1 tvg-name="SBT SC - H264" tvg-logo="http://uione.dadg.today:80/images/gIxRDUoM8qPQmJPoTBRJ1J0x5-ruTxVM25lVc5IWOUn0KP0Vui12kpnMwNm0OYQ5ZRyXmyr4v4VNHsOfs5_Y5g.jpg" group-title="SBT",SBT SC - H264
+http://clienteworld.com:80/claud123/claud123/138774685
+#EXTINF:-1 tvg-name="SBT SP - HD" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT SP - HD
+http://clienteworld.com:80/claud123/claud123/320223
+#EXTINF:-1 tvg-name="SBT SP - SD²" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT SP - SD²
+http://clienteworld.com:80/claud123/claud123/83671
+#EXTINF:-1 tvg-name="SBT TV ALTEROSA - SD" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT TV ALTEROSA - SD
+http://clienteworld.com:80/claud123/claud123/320216
+#EXTINF:-1 tvg-name="SBT TV SERRA DOURADA" tvg-logo="https://tinyurl.com/u9csbt" group-title="SBT",SBT TV SERRA DOURADA
+http://clienteworld.com:80/claud123/claud123/96177

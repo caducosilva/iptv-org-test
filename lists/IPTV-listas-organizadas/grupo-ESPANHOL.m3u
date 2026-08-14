@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="EURONEWS ES" tvg-logo="https://www.earthhour.org/sites/default/files/euronews-logo.png" group-title="ESPANHOL",EURONEWS ES
+http://fr-par-iphone-1.cdn.hexaglobe.net:80/streaming/euronews_ewns/24-live.m3u8

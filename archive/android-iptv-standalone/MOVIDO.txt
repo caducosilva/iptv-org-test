@@ -1,0 +1,9 @@
+MOVIDO
+
+Este projeto Android foi separado do companion PC.
+
+Use agora:
+  Documents\IPTV-Android\
+
+O companion PC continua so em:
+  Documents\iptv-org-test\

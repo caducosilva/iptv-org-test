@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="globo.mogi.fhd" tvg-name="GLOBO TV DIARIO MOGI DAS CRUZES FHD" tvg-logo="https://tinyurl.com/u9cglob" group-title="GLOBO",GLOBO TV DIARIO MOGI DAS CRUZES FHD
+http://clienteworld.com:80/claud123/claud123/105040
+#EXTINF:-1 tvg-id="globo.mogi.hd" tvg-name="GLOBO TV DIARIO MOGI DAS CRUZES HD" tvg-logo="https://tinyurl.com/u9cglob" group-title="GLOBO",GLOBO TV DIARIO MOGI DAS CRUZES HD
+http://clienteworld.com:80/claud123/claud123/105039
+#EXTINF:-1 tvg-id="globo.mogi.sd" tvg-name="GLOBO TV DIARIO MOGI DAS CRUZES SD" tvg-logo="https://tinyurl.com/u9cglob" group-title="GLOBO",GLOBO TV DIARIO MOGI DAS CRUZES SD
+http://clienteworld.com:80/claud123/claud123/130594
