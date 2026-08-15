@@ -1,1 +1,147 @@
 @import "tailwindcss";
+
+/*
+ * Mesa de Corte — identidade visual do painel de IPTV.
+ *
+ * A ideia e uma mesa de corte de emissora vista de madrugada: charcoal quente
+ * (nao o azul-preto padrao), estrutura em fio de cabelo, e um unico ambar de
+ * broadcast reservado para o que esta ativo/no ar. A saude do canal mantem o
+ * semaforo (verde/ambar/vermelho) porque ali a cor E a informacao.
+ *
+ * Tudo mora no @theme: o app ja usa as classes slate/indigo/emerald/amber/rose
+ * do Tailwind em 14 arquivos, entao redefinir a escala re-veste tudo de uma vez
+ * sem tocar na logica.
+ */
+@theme {
+  /* Fundos: charcoal levemente quente, do mais fundo ao mais proximo */
+  --color-slate-950: #0d1114;
+  --color-slate-900: #141a1e;
+  --color-slate-800: #1e262c;
+  --color-slate-700: #2b353d;
+  --color-slate-600: #3a4650;
+  --color-slate-500: #7f8d97;
+  --color-slate-400: #9aa7b0;
+  --color-slate-300: #c2ccd3;
+  --color-slate-200: #dbe2e7;
+  --color-slate-100: #eaf0f3;
+
+  /* Marca: ambar de broadcast. So aparece no ativo, no logo e na acao principal.
+     O app usa "indigo" como cor de acao; remapeamos para o ambar da mesa. */
+  --color-indigo-950: #2a1e05;
+  --color-indigo-900: #3d2c08;
+  --color-indigo-800: #5a410c;
+  --color-indigo-700: #8a6410;
+  --color-indigo-600: #b98716;
+  --color-indigo-500: #e0a51d;
+  --color-indigo-400: #f5b942;
+  --color-indigo-300: #f9cd74;
+  --color-indigo-200: #fbdfa3;
+
+  /* Saude do canal: semaforo. Verde = no ar, ambar = duvida, vermelho = morto.
+     Tons calibrados para o charcoal quente, sem vibrar demais. */
+  --color-emerald-950: #052015;
+  --color-emerald-900: #06301f;
+  --color-emerald-700: #0f7a4a;
+  --color-emerald-500: #22b866;
+  --color-emerald-400: #3fd07f;
+  --color-emerald-300: #6fe0a1;
+  --color-emerald-200: #a7ecc5;
+
+  --color-amber-950: #2a1d02;
+  --color-amber-900: #3c2a04;
+  --color-amber-800: #5c410a;
+  --color-amber-400: #f0b429;
+  --color-amber-300: #f7cd5b;
+  --color-amber-200: #fbe08f;
+
+  --color-rose-950: #2a0910;
+  --color-rose-900: #3f0d18;
+  --color-rose-700: #a41f36;
+  --color-rose-500: #e5484d;
+  --color-rose-400: #f0656a;
+  --color-rose-300: #f79ca0;
+
+  /* Tipografia: grotesca com carater para titulos e cifras, mono para os
+     numeros de canal e dados, e uma utilitaria neutra para o corpo. */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    background-color: var(--color-slate-950);
+    color: var(--color-slate-100);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Titulos usam a grotesca; o resto herda a utilitaria */
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-indigo-400);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  /* Assinatura 1: numeral de "slot" de canal, como no gerador de caracteres de
+     uma emissora. Mono, tabular, para os numeros alinharem em coluna. */
+  .slot-canal {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+
+  /* Assinatura 2: luz de tally. O ponto de "no ar" pulsa como a luz vermelha
+     em cima da camera de estudio. */
+  .tally {
+    position: relative;
+  }
+  .tally::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 60%;
+    transform: translateY(-50%);
+    background: var(--color-indigo-400);
+    border-radius: 2px;
+    box-shadow: 0 0 8px var(--color-indigo-400);
+  }
+
+  @keyframes tally-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+  }
+  .tally-live::after {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background: var(--color-rose-500);
+    box-shadow: 0 0 8px var(--color-rose-500);
+    animation: tally-pulse 1.4s ease-in-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

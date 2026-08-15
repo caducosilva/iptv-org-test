@@ -1,5 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="TV FÁTIMA" group-title="Canais de Variedades",TV FÁTIMA
-http://stmv2.euroti.com.br:1935/tvfatimatb/tvfatimatb/live.m3u8?Compartilhandolink
-#EXTINF:-1 tvg-name="TV ONLINE" group-title="Canais de Variedades",TV ONLINE
-http://video7.stream.mx:1935/raxatv/raxatv/chunklist_w884577146.m3u8

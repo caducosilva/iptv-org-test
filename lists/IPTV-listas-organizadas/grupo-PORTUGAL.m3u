@@ -1,7 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="EURONEWS PT" tvg-logo="https://www.earthhour.org/sites/default/files/euronews-logo.png" group-title="PORTUGAL",EURONEWS PT
-http://fr-par-iphone-1.cdn.hexaglobe.net:80/streaming/euronews_ewns/29-live.m3u8
-#EXTINF:-1 tvg-name="TVI 24" tvg-logo="https://lut.im/rYolQcQuV7/2sdrvQwSCtd0wyj1.png" group-title="PORTUGAL",TVI 24
-http://video-live.iol.pt:1935/live_tvi24/LIVE_TVI24-3/livestream.m3u8
-#EXTINF:-1 tvg-name="TVI PT" tvg-logo="http://www.prisa.com/uploads/2016/03/televisao-independente-current-logo.png" group-title="PORTUGAL",TVI PT
-http://video-live.iol.pt:1935/live_tvi/smil:LIVE_TVI/chunklist_b814000.m3u8

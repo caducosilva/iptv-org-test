@@ -1,9 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="BAND SPORTS" tvg-logo="https://goo.gl/XUfBr5" group-title="canais digitalsbl 2",BAND SPORTS
-http://ev.mm.uol.com.br:1935/geobband/operadoras/chunklist_w1057155891.m3u8
-#EXTINF:-1 tvg-name="BAND SPORTS" tvg-logo="https://goo.gl/XUfBr5" group-title="canais digitalsbl 2",BAND SPORTS
-http://ev.mm.uol.com.br:1935/geobband/operadoras/playlist.m3u8?bandsport
-#EXTINF:-1 tvg-name="COMBATE" tvg-logo="https://s32.postimg.org/7yy5aszit/combate2.png" group-title="canais digitalsbl 2",COMBATE
-http://95.211.149.215:8081/look/combate/playlist.m3u8
-#EXTINF:-1 tvg-name="HISTORY CHANNEL HD" tvg-logo="http://s20.postimg.org/plh7s2h6x/History_Channel.png" group-title="canais digitalsbl 2",HISTORY CHANNEL HD
-http://5.79.68.138:8081/look/history/playlist.m3u8

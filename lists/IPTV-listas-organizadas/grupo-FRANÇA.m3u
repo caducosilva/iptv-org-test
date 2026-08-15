@@ -1,5 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="FRANCE 24" tvg-logo="https://lut.im/W3pGaGB2bv/2AtcC21ywagcfdvU.png" group-title="FRANÇA",FRANCE 24
-http://f24hls-i.akamaihd.net/hls/live/221193/F24_EN_LO_HLS/master_900.m3u8
-#EXTINF:-1 tvg-name="TV5 MONDE" tvg-logo="http://www.tvmagazine.com.br/imagens/icones/600/tv5monde.png" group-title="FRANÇA",TV5 MONDE
-http://hlslive.lcdn.une.net.co:80/v1/AUTH_HLSLIVE/TV5/tu1_manifest.m3u8

@@ -131,6 +131,7 @@ const TRADUCAO_CATEGORIA: Record<string, Categoria> = {
 
 /** listas em portugues tambem aparecem; alguns rotulos comuns */
 const TRADUCAO_EXTRA: Record<string, Categoria> = {
+  mogi: { chave: 'mogi', rotulo: '📍 Mogi das Cruzes' },
   filmes: { chave: 'filmes', rotulo: 'Filmes' },
   cinema: { chave: 'filmes', rotulo: 'Filmes' },
   'series': { chave: 'series', rotulo: 'Séries' },
@@ -153,6 +154,7 @@ export const SEM_CATEGORIA: Categoria = { chave: 'sem-categoria', rotulo: 'Sem c
 
 /** ordem preferida no trilho lateral; o resto vem depois, por quantidade */
 export const ORDEM_CATEGORIAS = [
+  'mogi',
   'abertos',
   'filmes',
   'series',

@@ -1,7 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="1HD MUSIC TELEVISION" tvg-logo="https://goo.gl/Ddd93C" group-title="Musicas",1HD MUSIC TELEVISION
-http://80.250.191.10:1935/live/hlsstream343/playlist.m3u8
-#EXTINF:-1 tvg-name="DJ HITS" tvg-logo="http://s20.postimg.org/4i8o6fouh/DHING.jpg" group-title="Musicas",DJ HITS
-http://www.djing.com/tv/04.m3u8
-#EXTINF:-1 tvg-name="HOT MUSIC" tvg-logo="http://s20.postimg.org/55679u6x9/hotmusic.jpg" group-title="Musicas",HOT MUSIC
-http://wow01.105.net/live/rmc1/playlist.m3u8

@@ -1,9 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="PARAMOUNT" tvg-logo="http://s31.postimg.org/f9lq0eei3/paramount.png" group-title="Filmes e Séries",PARAMOUNT
-http://187.49.86.238:10000/bysid/49
-#EXTINF:-1 tvg-name="TVI (01)" tvg-logo="https://voxpoptv.files.wordpress.com/2011/07/tvi.png" group-title="Filmes e Séries",TVI (01)
-http://video-live.iol.pt:1935/live_tvi/smil:LIVE_TVI/playlist.m3u8
-#EXTINF:-1 tvg-name="TVI (02)" tvg-logo="https://voxpoptv.files.wordpress.com/2011/07/tvi.png" group-title="Filmes e Séries",TVI (02)
-http://video-live.iol.pt:1935/live_tvi/LIVE_TVI-2/livestream.m3u8
-#EXTINF:-1 tvg-name="TVI (03)" tvg-logo="https://voxpoptv.files.wordpress.com/2011/07/tvi.png" group-title="Filmes e Séries",TVI (03)
-http://video-live.iol.pt:1935/live_tvi+/smil:LIVE_TVI+/playlist.m3u8

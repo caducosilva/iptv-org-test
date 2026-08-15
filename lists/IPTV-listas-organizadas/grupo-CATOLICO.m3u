@@ -1,3 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="CANCAO NOVA" tvg-logo="https://goo.gl/63ISSk" group-title="CATOLICO",CANCAO NOVA
-http://cancaonova-push-live.hls.adaptive.level3.net:80/hls-live/cancaonova-channel01/_definst_/live/stream1.m3u8

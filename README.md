@@ -53,6 +53,25 @@ cd iptv-org-test
 cd frontend && npm install && cd ..
 ```
 
+### Gerar o catálogo de canais
+
+O catálogo não vem no repositório: são URLs de stream que mudam toda hora, e
+parte delas carrega credencial de serviço pirata que não deve ir para um
+repositório público. Você gera localmente:
+
+```bash
+python tools/build_br_catalog.py
+```
+
+O script junta as fontes públicas (iptv-org) com as listas locais em
+`lists/_fontes/`, mantém **apenas canais do Brasil**, tira repetido, organiza em
+categorias (Abertos, Notícias, Filmes, Séries, Infantil, Esportes, Mogi, etc.)
+e grava `lists/brasil.m3u`. Rode `--sem-rede` para usar só as fontes locais.
+
+O painel segrega os canais por essas categorias sozinho, com **📍 Mogi das
+Cruzes** no topo do trilho. Canal de Mogi de fonte legítima hoje é só a TV
+Diário (afiliada Globo); o resto da web pública de Mogi saiu do ar.
+
 ---
 
 ## Como usar

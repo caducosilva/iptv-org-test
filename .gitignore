@@ -24,6 +24,18 @@ logs/
 screenshots/
 *.png
 
+# Dados de catalogo: sao gerados por tools/build_br_catalog.py e contem URLs de
+# stream (algumas com credencial embutida de servico pirata). Nao versionar num
+# repositorio publico. Rode o builder para gerar lists/brasil.m3u localmente.
+lists/*.m3u
+lists/*.m3u8
+lists/*.txt
+lists/_fontes/
+lists/IPTV-listas-organizadas/
+lists/results-br/
+lists/results-index/
+archive/
+
 # Node / Vite
 node_modules/
 dist/

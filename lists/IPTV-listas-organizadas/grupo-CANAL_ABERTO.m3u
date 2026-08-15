@@ -1,7 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="CANAL SAUDE" group-title="canal aberto",CANAL SAUDE
-http://gbbrlive2.sambatech.com.br:80/liveevent/CanalSaude_1d664cc5aa583759e0550c79d8e4e5b8/livestream/live.m3u8
-#EXTINF:-1 tvg-name="RECORD (PB)" tvg-logo="http://rederecord.r7.com/files/2011/08/recordHD1.jpg" group-title="canal aberto",RECORD (PB)
-http://flash1.crossdigital.com.br/491/491/playlist.m3u8
-#EXTINF:-1 tvg-name="RICOS [COLOR orange](ON)[/COLOR]" group-title="canal aberto",RICOS [COLOR orange](ON)[/COLOR]
-http://painel.tvdigitalhd.org:1935/canalricos548/canalricos548/playlist.m3u8

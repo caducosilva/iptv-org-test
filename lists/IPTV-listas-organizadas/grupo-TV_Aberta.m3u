@@ -1,5 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="BAND SP" tvg-logo="http://s15.postimg.org/nvhe10jzb/band3.png Band" group-title="TV ABERTA",BAND SP
-http://5.79.68.138:8081/look/band/playlist.m3u8
-#EXTINF:-1 tvg-name="GLOBO SP" tvg-logo="http://s17.postimg.org/w75u3yg1n/globo2.png" group-title="TV ABERTA",GLOBO SP
-http://95.211.149.215:8081/look/sptv/playlist.m3u8
