@@ -105,17 +105,31 @@ def tcp_open(host: str, port: int, timeout: float = 2.5) -> bool:
         return False
 
 
-def http_get(url: str, timeout: float = 12.0) -> tuple[int, str, bytes]:
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
+def http_get(url: str, timeout: float = 12.0) -> tuple[int, str, bytes, str]:
+    """Devolve status, tipo, corpo e o endereco em que a resposta parou.
+
+    O endereco final importa: o Chromecast NAO segue redirect. Canal de
+    provedor Xtream responde 302 para outro servidor com token na URL, e
+    mandar o endereco de antes deixa a TV carregando para sempre, sem erro.
+    """
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": UA,
+            "Accept": "*/*",
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+        },
+    )
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         raw = resp.read(512_000)
         ctype = (resp.headers.get("Content-Type") or "").lower()
-        return resp.status, ctype, raw
+        return resp.status, ctype, raw, resp.geturl()
 
 
 def preflight(url: str) -> dict:
     try:
-        status, ctype, raw = http_get(url)
+        status, ctype, raw, _final = http_get(url)
     except Exception as exc:  # noqa: BLE001
         return {"ok": False, "error": f"URL inacessivel: {exc}", "url": url}
     if status >= 400:
@@ -128,20 +142,23 @@ def preflight(url: str) -> dict:
 
 
 def resolve_hls(url: str) -> str:
-    """Se for master playlist, devolve a MELHOR variante (maior banda), absoluta.
+    """Deixa a URL do jeito que o Chromecast consegue abrir.
 
-    Pegar a primeira linha solta funcionava por acaso: em masters com varias
-    qualidades isso podia cair numa variante ruim.
+    Duas coisas o travam, as duas em silencio (TV parada em "carregando", sem
+    erro nenhum de volta): redirect, que ele nao segue, e master playlist de
+    canal ao vivo. Aqui o redirect ja vem seguido pelo http_get e o que sai e
+    o endereco final; se o que chegou foi uma master, sai a variante de maior
+    banda. Pegar a primeira linha solta funcionava por acaso.
     """
     try:
-        _status, _ctype, raw = http_get(url)
+        _status, _ctype, raw, final = http_get(url)
     except Exception:
         return url
     text = raw.decode("utf-8", "replace")
     if "#EXTM3U" not in text:
         return url
     if "#EXTINF" in text:
-        return url  # ja e a playlist de midia
+        return final  # ja e a playlist de midia, no endereco que vale
 
     lines = text.splitlines()
     best_uri = ""
@@ -169,7 +186,7 @@ def resolve_hls(url: str) -> str:
             best_uri = s
         pending_bw = None
 
-    return urljoin(url, best_uri) if best_uri else url
+    return urljoin(final, best_uri) if best_uri else final
 
 
 # ------------------------------------------------------------- chromecast

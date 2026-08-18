@@ -132,22 +132,46 @@ const TRADUCAO_CATEGORIA: Record<string, Categoria> = {
 /** listas em portugues tambem aparecem; alguns rotulos comuns */
 const TRADUCAO_EXTRA: Record<string, Categoria> = {
   mogi: { chave: 'mogi', rotulo: '📍 Mogi das Cruzes' },
+  'globos regionais': { chave: 'globos-regionais', rotulo: 'Globos Regionais' },
+  'globo capitais': { chave: 'globo-capitais', rotulo: 'Globo Capitais' },
+  record: { chave: 'record', rotulo: 'Record TV' },
+  sbt: { chave: 'sbt', rotulo: 'SBT' },
+  band: { chave: 'band', rotulo: 'Rede Bandeirantes' },
+  '24h seriados': { chave: 'series-24h', rotulo: 'Séries 24 Horas' },
+  '24h animes&desenhos': { chave: 'animes-desenhos', rotulo: 'Animes & Desenhos 24h' },
+  'filmes e séries': { chave: 'filmes', rotulo: 'Filmes e Séries' },
+  telecine: { chave: 'filmes', rotulo: 'Telecine / Filmes' },
+  hbo: { chave: 'filmes', rotulo: 'HBO' },
+  'hbo max': { chave: 'filmes', rotulo: 'HBO Max' },
   filmes: { chave: 'filmes', rotulo: 'Filmes' },
   cinema: { chave: 'filmes', rotulo: 'Filmes' },
-  'series': { chave: 'series', rotulo: 'Séries' },
+  series: { chave: 'series', rotulo: 'Séries' },
   novelas: { chave: 'series', rotulo: 'Séries' },
+  netflix: { chave: 'series', rotulo: 'Netflix 24h' },
   infantil: { chave: 'infantil', rotulo: 'Infantil' },
+  infantis: { chave: 'infantil', rotulo: 'Infantil' },
   desenhos: { chave: 'infantil', rotulo: 'Infantil' },
+  'disney+': { chave: 'infantil', rotulo: 'Disney+' },
   noticias: { chave: 'noticias', rotulo: 'Notícias' },
   jornalismo: { chave: 'noticias', rotulo: 'Notícias' },
   esportes: { chave: 'esportes', rotulo: 'Esportes' },
   futebol: { chave: 'esportes', rotulo: 'Esportes' },
+  premiere: { chave: 'esportes', rotulo: 'Premiere Futebol' },
+  sportv: { chave: 'esportes', rotulo: 'SporTV' },
+  espn: { chave: 'esportes', rotulo: 'ESPN' },
+  nba: { chave: 'esportes', rotulo: 'NBA Basquete' },
+  'campeonato regional': { chave: 'esportes', rotulo: 'Futebol Regional' },
+  '4k': { chave: '4k', rotulo: 'Canais 4K Ultra HD' },
   musicas: { chave: 'musica', rotulo: 'Música' },
+  rádio: { chave: 'musica', rotulo: 'Rádios' },
+  radio: { chave: 'musica', rotulo: 'Rádios' },
   religiosos: { chave: 'religioso', rotulo: 'Religioso' },
   variedades: { chave: 'entretenimento', rotulo: 'Entretenimento' },
   'tv aberta': { chave: 'abertos', rotulo: 'Canais abertos' },
   'canal aberto': { chave: 'abertos', rotulo: 'Canais abertos' },
   'canais abertos': { chave: 'abertos', rotulo: 'Canais abertos' },
+  brazil: { chave: 'abertos', rotulo: 'Canais Nacionais' },
+  'brazil vip': { chave: 'abertos', rotulo: 'Canais Nacionais' },
 };
 
 export const SEM_CATEGORIA: Categoria = { chave: 'sem-categoria', rotulo: 'Sem categoria' };
@@ -156,15 +180,23 @@ export const SEM_CATEGORIA: Categoria = { chave: 'sem-categoria', rotulo: 'Sem c
 export const ORDEM_CATEGORIAS = [
   'mogi',
   'abertos',
+  'globos-regionais',
+  'globo-capitais',
+  'record',
+  'sbt',
+  'band',
   'filmes',
   'series',
+  'series-24h',
+  'animes-desenhos',
   'infantil',
-  'animacao',
-  'noticias',
   'esportes',
+  'noticias',
+  '4k',
   'documentarios',
   'musica',
   'entretenimento',
+  'religioso',
 ];
 
 const rotulosPorChave = new Map<string, string>([[SEM_CATEGORIA.chave, SEM_CATEGORIA.rotulo]]);
@@ -178,6 +210,15 @@ export function rotuloDaCategoria(chave: string): string {
 
 const VAZIOS = new Set(['', 'undefined', 'null', 'n/a', 'na', '-', 'outros', 'other', 'sem grupo']);
 
+function limparNomeGrupo(texto: string): string {
+  return texto
+    .replace(/[♦️⭐🔥📌📺🎬⚽🎯💎✨]/g, '')
+    .replace(/^canais\s*\|\s*/i, '')
+    .replace(/^lame\s*\|\s*/i, '')
+    .replace(/^24\/7\s*\|\s*/i, '')
+    .trim();
+}
+
 /**
  * Cache por group-title: o catalogo tem ~13 mil canais mas menos de 200
  * valores distintos de grupo, entao normalizar uma vez cada e suficiente.
@@ -190,14 +231,15 @@ function normalizarGrupo(grupo: string): string[] {
   if (emCache) return emCache;
 
   const chaves: string[] = [];
-  for (const parte of bruto.split(/[;,|/]/)) {
-    const termo = parte.trim().toLowerCase();
+  for (const parte of bruto.split(/[;,/]/)) {
+    const limpo = limparNomeGrupo(parte);
+    const termo = limpo.toLowerCase();
     if (!termo || VAZIOS.has(termo)) continue;
     const traduzida = TRADUCAO_CATEGORIA[termo] || TRADUCAO_EXTRA[termo];
     const chave = traduzida ? traduzida.chave : `outros:${termo}`;
     if (!traduzida && !rotulosPorChave.has(chave)) {
-      // categoria desconhecida: mantem o nome original, so com inicial maiuscula
-      rotulosPorChave.set(chave, parte.trim().charAt(0).toUpperCase() + parte.trim().slice(1));
+      // categoria desconhecida: mantem o nome original limpo
+      rotulosPorChave.set(chave, limpo.charAt(0).toUpperCase() + limpo.slice(1));
     }
     if (!chaves.includes(chave)) chaves.push(chave);
   }

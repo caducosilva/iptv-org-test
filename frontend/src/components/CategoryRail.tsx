@@ -41,9 +41,18 @@ interface CategoryRailProps {
 
 /** icone por categoria: ajuda a bater o olho e achar sem ler */
 const ICONES: Record<string, React.ComponentType<{ className?: string }>> = {
+  mogi: Landmark,
+  'globos-regionais': Tv,
+  'globo-capitais': Tv,
+  record: Tv,
+  sbt: Tv,
+  band: Tv,
   abertos: Tv,
   filmes: Film,
   series: Clapperboard,
+  'series-24h': Clapperboard,
+  'animes-desenhos': Sparkles,
+  '4k': Sparkles,
   infantil: Baby,
   animacao: Sparkles,
   noticias: Newspaper,

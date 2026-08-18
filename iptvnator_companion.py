@@ -52,6 +52,122 @@ garantir_dependencias()
 
 import websockets  # noqa: E402
 
+_WINDOWS_JOB_OBJECT = None
+_CONSOLE_CTRL_HANDLER_REF = None
+
+
+def enable_windows_job_object_cleanup() -> None:
+    """Configura Windows Job Object com JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE (0x2000).
+    Garante que no instante em que este processo ou seu terminal for fechado,
+    o Kernel do Windows extermina TODOS os processos filhos (Chrome, MPV, Node, Python workers).
+    """
+    global _WINDOWS_JOB_OBJECT
+    if sys.platform != "win32":
+        return
+    try:
+        import ctypes
+        from ctypes import wintypes
+
+        class JOBOBJECT_BASIC_LIMIT_INFORMATION(ctypes.Structure):
+            _fields_ = [
+                ("PerProcessUserTimeLimit", ctypes.c_int64),
+                ("PerJobUserTimeLimit", ctypes.c_int64),
+                ("LimitFlags", wintypes.DWORD),
+                ("MinimumWorkingSetSize", ctypes.c_size_t),
+                ("MaximumWorkingSetSize", ctypes.c_size_t),
+                ("ActiveProcessLimit", wintypes.DWORD),
+                ("Affinity", ctypes.c_size_t),
+                ("PriorityClass", wintypes.DWORD),
+                ("SchedulingClass", wintypes.DWORD),
+            ]
+
+        class IO_COUNTERS(ctypes.Structure):
+            _fields_ = [
+                ("ReadOperationCount", ctypes.c_uint64),
+                ("WriteOperationCount", ctypes.c_uint64),
+                ("OtherOperationCount", ctypes.c_uint64),
+                ("ReadTransferCount", ctypes.c_uint64),
+                ("WriteTransferCount", ctypes.c_uint64),
+                ("OtherTransferCount", ctypes.c_uint64),
+            ]
+
+        class JOBOBJECT_EXTENDED_LIMIT_INFORMATION(ctypes.Structure):
+            _fields_ = [
+                ("BasicLimitInformation", JOBOBJECT_BASIC_LIMIT_INFORMATION),
+                ("IoInfo", IO_COUNTERS),
+                ("ProcessMemoryLimit", ctypes.c_size_t),
+                ("JobMemoryLimit", ctypes.c_size_t),
+                ("PeakProcessMemoryLimit", ctypes.c_size_t),
+                ("PeakJobMemoryLimit", ctypes.c_size_t),
+            ]
+
+        kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+        kernel32.GetCurrentProcess.restype = wintypes.HANDLE
+        kernel32.CreateJobObjectW.restype = wintypes.HANDLE
+        kernel32.CreateJobObjectW.argtypes = [ctypes.c_void_p, ctypes.c_wchar_p]
+        kernel32.SetInformationJobObject.restype = wintypes.BOOL
+        kernel32.SetInformationJobObject.argtypes = [wintypes.HANDLE, ctypes.c_int, ctypes.c_void_p, wintypes.DWORD]
+        kernel32.AssignProcessToJobObject.restype = wintypes.BOOL
+        kernel32.AssignProcessToJobObject.argtypes = [wintypes.HANDLE, wintypes.HANDLE]
+
+        job = kernel32.CreateJobObjectW(None, None)
+        if job:
+            info = JOBOBJECT_EXTENDED_LIMIT_INFORMATION()
+            info.BasicLimitInformation.LimitFlags = 0x2000  # JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE
+            if kernel32.SetInformationJobObject(job, 9, ctypes.byref(info), ctypes.sizeof(info)):
+                kernel32.AssignProcessToJobObject(job, kernel32.GetCurrentProcess())
+                _WINDOWS_JOB_OBJECT = job
+    except Exception as exc:
+        print("WARN job object:", exc, flush=True)
+
+
+def cleanup_all_subprocesses() -> None:
+    """Encerra com forca processos orfaos (MPV, Chrome App, workers) e libera recursos."""
+    try:
+        subprocess.run(["taskkill", "/IM", "mpv.exe", "/F"], capture_output=True, check=False)
+    except Exception:
+        pass
+    try:
+        pid_path = LOGS_DIR / "companion.pid"
+        if pid_path.exists():
+            pid_path.unlink(missing_ok=True)
+    except Exception:
+        pass
+
+
+def setup_windows_ctrl_handler() -> None:
+    """Captura o clique no 'X' da janela de terminal ou fechamento de sessao."""
+    global _CONSOLE_CTRL_HANDLER_REF
+    if sys.platform != "win32":
+        return
+    try:
+        import atexit
+        import ctypes
+        import signal
+
+        atexit.register(cleanup_all_subprocesses)
+
+        try:
+            signal.signal(signal.SIGINT, lambda *args: sys.exit(0))
+            signal.signal(signal.SIGTERM, lambda *args: sys.exit(0))
+        except Exception:
+            pass
+
+        HandlerRoutine = ctypes.WINFUNCTYPE(ctypes.c_bool, ctypes.c_ulong)
+
+        def _ctrl_handler(ctrl_type: int) -> bool:
+            cleanup_all_subprocesses()
+            return False
+
+        _CONSOLE_CTRL_HANDLER_REF = HandlerRoutine(_ctrl_handler)
+        ctypes.windll.kernel32.SetConsoleCtrlHandler(_CONSOLE_CTRL_HANDLER_REF, True)
+    except Exception:
+        pass
+
+
+enable_windows_job_object_cleanup()
+setup_windows_ctrl_handler()
+
 ROOT = Path(__file__).resolve().parent
 
 CDP_PORT = 9222
@@ -166,12 +282,15 @@ _PLAYLIST_COUNTRY: dict[str, str] = {
     "br": "br",
     "brasil": "br",
     "brazil": "br",
+    "free-tv-brasil": "br",
     "iptvnator-working-br": "br",
     "portugal": "pt",
     "eua": "us",
     "estados-unidos": "us",
     "japao": "jp",
     "japan": "jp",
+    "italia": "it",
+    "italy": "it",
 }
 
 _PLAYLIST_HINT_CACHE: dict[str, str] = {}
@@ -189,7 +308,7 @@ def _country_from_tvg_id(tvg_id: str) -> str:
 
 
 def _country_from_playlist(playlist_name: str) -> str:
-    """Pais indicado pelo nome do arquivo (country-br.m3u, brasil.m3u)."""
+    """Pais indicado pelo nome do arquivo (country-br.m3u, CanaisBR01.m3u8, brasil.m3u)."""
     p = (playlist_name or "").strip().lower()
     if not p:
         return ""
@@ -198,9 +317,16 @@ def _country_from_playlist(playlist_name: str) -> str:
         return cached
     achado = _PLAYLIST_COUNTRY.get(p, "")
     if not achado:
-        m = re.match(r"^(?:country|pais|pa[ií]s)[-_]([a-z]{2})$", p)
-        if m:
-            achado = m.group(1)
+        if "canaisbr" in p or "brasil" in p or "brazil" in p:
+            achado = "br"
+        elif "itália" in p or "italia" in p:
+            achado = "it"
+        elif "usa" in p or "eua" in p:
+            achado = "us"
+        else:
+            m = re.match(r"^(?:country|pais|pa[ií]s)[-_]([a-z]{2})$", p)
+            if m:
+                achado = m.group(1)
     _PLAYLIST_HINT_CACHE[p] = achado
     return achado
 
@@ -657,6 +783,7 @@ def lookup_channel(name_query: str) -> dict | None:
 
 
 def chromecast_scan(timeout: float = 8.0) -> list[dict]:
+    _flags = subprocess.CREATE_NO_WINDOW if hasattr(subprocess, "CREATE_NO_WINDOW") else 0
     worker = ROOT / "tools" / "scan_worker.py"
     proc = subprocess.run(
         [sys.executable, str(worker)],
@@ -664,6 +791,7 @@ def chromecast_scan(timeout: float = 8.0) -> list[dict]:
         text=True,
         timeout=max(15, int(timeout) + 10),
         check=False,
+        creationflags=_flags,
     )
     out = (proc.stdout or "").strip().splitlines()
     if not out:
@@ -672,6 +800,7 @@ def chromecast_scan(timeout: float = 8.0) -> list[dict]:
 
 
 def chromecast_play(host_or_name: str, url: str, title: str = "IPTV") -> dict:
+    _flags = subprocess.CREATE_NO_WINDOW if hasattr(subprocess, "CREATE_NO_WINDOW") else 0
     worker = ROOT / "tools" / "cast_worker.py"
     payload_path = LOGS_DIR / "cast_payload.json"
     result_path = CAST_RESULT_PATH
@@ -690,7 +819,7 @@ def chromecast_play(host_or_name: str, url: str, title: str = "IPTV") -> dict:
     # nao bloqueia o HTTP server: worker grava resultado em arquivo
     wrapper = (
         "import json,subprocess,sys\n"
-        f"p=subprocess.run([sys.executable, r'{worker}', r'{payload_path}'], capture_output=True, text=True, timeout=70)\n"
+        f"p=subprocess.run([sys.executable, r'{worker}', r'{payload_path}'], capture_output=True, text=True, timeout=70, creationflags=subprocess.CREATE_NO_WINDOW if hasattr(subprocess, 'CREATE_NO_WINDOW') else 0)\n"
         "lines=(p.stdout or '').strip().splitlines()\n"
         "data=json.loads(lines[-1]) if lines else {'error':'sem output','stderr':p.stderr}\n"
         f"open(r'{result_path}','w',encoding='utf-8').write(json.dumps(data,ensure_ascii=False))\n"
@@ -700,6 +829,7 @@ def chromecast_play(host_or_name: str, url: str, title: str = "IPTV") -> dict:
         cwd=str(ROOT),
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
+        creationflags=_flags,
     )
     # espera resultado ate 55s
     deadline = time.time() + 55
